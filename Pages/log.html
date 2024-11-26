@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Candidate Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .background_img {
+            width: 100%;
+            height: 100%;
+            background-image: url('../Assets/img/images\ \(1\).jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            filter: blur(3px);
+        }
+
+        .background_img img {
+            width: 100%;
+        }
+
+        .form_body {
+            width: 27%;
+            height: 500px;
+            margin: 75px auto;
+            background-color: #fff;
+            text-align: center;
+            padding-top: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            width: 90%;
+            margin: auto;
+        }
+
+        .logo img {
+            width: 100%;
+        }
+        .h2{
+            
+        }
+        form {
+            position: relative;
+            top: -50px;
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid skyblue;
+            outline: none;
+            background-color: transparent;
+            width: 75%;
+            margin-left: 10%;
+            padding: 7px 0;
+        }
+
+        #captcha {
+            width: 40%;
+            margin: auto;
+            position: relative;
+            right: 0;
+        }
+
+        button {
+            width: 85%;
+            margin: auto;
+            padding: 15px 0;
+            border: none;
+            outline: none;
+            background: linear-gradient(to right, rgb(27, 143, 189), rgb(98, 195, 233));
+            color: #fff;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        h4 {
+            display: inline-block;
+            background-color: #a7a7a7;
+            padding: 7px 20px;
+            color: #000;
+        }
+
+        span {
+            color: rgb(70, 165, 202);
+            cursor: pointer;
+        }
+
+        p {
+            width: 90%;
+            margin: auto;
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="background_img"></div>
+    <div class="form_body">
+        <div class="logo">
+            <img src="../Assets/img/UPSDM_Logo 1.png" alt="UPSDM Logo">
+            <hr><br>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 style="color: rgb(9, 123, 230);">Candidate Login</h2>
+        </div>
+        <br><br>
+        <!-- Form with action to redirect to dashboard.html -->
+        <form action="db.html" method="GET">
+            <input type="text" name="username" placeholder="Username" required>
+            <br><br>
+            <input type="password" name="password" placeholder="Password" required>
+            <br><br>
+            <h4>A1B2C3</h4>
+            <input type="text" name="captcha" id="captcha" placeholder="Enter Captcha" required>
+            <br><br><br><br>
+            <button type="submit">SIGN IN</button>
+            <br><br>
+            <span>Forgot Password?</span>
+            <br><br>
+            <p>By logging in, you agree to abide by its Terms of Use. Violations could lead to restriction of portal privileges.</p>
+        </form>
+    </div>
+</body>
+</html>
